@@ -42,4 +42,4 @@ next-env.d.ts
 
 #Database
 /pgdata
-/src/generated/prisma
+/src/generated/
