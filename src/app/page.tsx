@@ -1,7 +1,7 @@
-import { prisma } from "@/lib/prisma";
+import { prisma } from '@/lib/prisma';
 
 export default function Home() {
-
+  const teste = 'fss';
 
   return (
     <div>
