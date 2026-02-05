@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Prompt Manager',
   description: 'Gerencie seus prompts',
 };
+
+const inter = Inter({
+  variable: '--font-sans',
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+});
 
 export default function RootLayout({
   children,
@@ -13,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased bg-gray-900 text-white`}>
         {children}
       </body>
     </html>
